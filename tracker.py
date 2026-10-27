@@ -54,7 +54,8 @@ while True:
 
 
     elif choice == "3":
-        print("Show total selected")
+        total = 0
+        for item in expenses:
+            total += item["amount"]
+        print(f"Total Spent: ₦{total:,.2f}")
 
-    else:
-        print("Invalid choice")
