@@ -34,7 +34,7 @@ while True:
             print("Please enter a valid numeric amount")
             continue
 
-         expense = {
+        expense = {
             "description": description,
             "amount": amount
         }
@@ -46,7 +46,12 @@ while True:
     elif choice == "2":
         if not expenses:
             print("No expenses recorded yet")
-            
+        else:
+            print("\n--- Recorded Expenses ---")
+
+            for index, item in enumerate(expenses, start=1):
+                print(f"{index}. {item['description']} - ₦{item['amount']:.2f}")
+
 
     elif choice == "3":
         print("Show total selected")
