@@ -59,3 +59,8 @@ while True:
             total += item["amount"]
         print(f"Total Spent: ₦{total:,.2f}")
 
+if __name__ == "__main__":
+    expense_tracker()
+
+
+
